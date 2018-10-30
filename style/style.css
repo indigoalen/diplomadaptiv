@@ -1,0 +1,1278 @@
+/* шрифты*/
+@font-face {
+   font-family: OpenSans-bold;
+   font-style: normal;
+   font-weight: normal;
+   src: url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+        url("../fonts/OpenSans-Bold.woff") format("woff"),
+        url("../fonts/OpenSans-Bold.woff2") format("woff2");
+ }
+
+ @font-face {
+   font-family: OpenSans-regular;
+   font-style: normal;
+   font-weight: normal;
+   src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+        url("../fonts/OpenSans-Regular.woff") format("woff"),
+        url("../fonts/OpenSans-Regular.woff2") format("woff2");
+ }
+/* отмена сброс CSS*/
+ * {
+   margin: 0;
+   padding: 0;
+   }
+
+   /* *html, body {margin 0; padding: 0;} */
+
+
+body {
+font-family: 'Open Sans', Arial, sans-serif;
+font-size: 1.6rem;
+margin: 0;
+}
+
+
+.header-title {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    }
+
+ p {
+    margin-top: 0;   
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+.container {
+    box-sizing: border-box;
+  } 
+
+
+/* Logotype */
+
+.icon {
+    fill: #fff;
+}
+
+@media (max-width: 767px) {
+    .header-logo, .footer-logo {
+        width: 13.6rem;
+    }
+
+    .header-logo .icon, .footer-logo .icon {
+        height: 3.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-logo, .footer-logo {
+        width: 18.7rem;
+    }
+
+    .header-logo .icon, .footer-logo .icon {
+        height: 5.1rem;
+    }
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 961px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1560px;
+    }
+}
+
+/* header slogan */
+.header-slogan {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    text-align: left;
+}
+
+.header-slogan-one,
+.header-slogan-two {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .header-slogan {
+        font-size: 2.8rem;
+        margin-bottom: 8.3rem;
+    }
+
+    .header-slogan-two {
+        margin-top: 1.2rem;
+        margin-left: 4rem;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .header-slogan {
+        font-size: 6.4rem;
+        max-width: 60rem;
+        margin-bottom: 30rem;
+        line-height: 1.2;
+    }
+
+    .header-slogan-two {
+        margin-top: 0.2rem;
+        margin-left: 10.8rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .header-slogan {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 961px) {
+    .header-slogan {
+        font-size: 9rem;
+        margin-bottom: 21.4rem;
+        line-height: 1;
+    }
+
+    .header-slogan-two {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+/* button app choice*/ 
+
+.choice-button {
+    background-color: #5e42b0;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.choice-button-type {
+    display: block;
+    font-weight: bold;
+}
+
+
+/*buttons choice*/
+.choice-button {
+    background-color: #5e42b0;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.choice-button-action-order,
+.choice-button-style{
+  display: block;
+
+}
+
+ .choice-button-style{
+    font-weight: bold;
+  }
+  
+.choice-button-type {
+    display: block;
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .choice-button {
+        width: 100%;
+        max-width: 280px;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+        padding-left: 15%;
+        border-radius: 1.8rem;
+        font-size: .8rem;
+    }
+
+    .choice-button {
+        margin-top: 1.4rem;
+    }
+
+    .choice-button .icon {
+        height: 2.4rem;
+        margin-right: .6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .choice-button {
+        font-size: 1.6rem;
+        padding: 1.6rem 5rem 1.6rem 3.8rem;
+        border-radius: 38px;
+        min-width: 31.4rem;
+        justify-content: center;
+    }
+
+    .choice-button .icon {
+        height: 4.8rem;
+        margin-right: 2.2rem;
+    }
+
+    .icon.android-icon {
+        margin-left: -1.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .choice-button:nth-child(even)  {  
+        margin-left: 3rem;
+    }
+}
+
+@media (min-width: 961px) {
+    .choice-button:nth-child(even)  {  
+        margin-left: 5.2rem;
+    }
+}
+
+/* header */
+
+.header {
+    background-color: #0a0e34;
+    position: relative;
+    z-index: -1;
+}
+
+.header:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    }
+
+.header-logo, .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-top: 3.3rem;
+        padding-bottom: 8.4rem;
+    }
+
+    .header:before {
+        background-image: url("../img/football_767.jpg");
+    }
+
+    .header-logo {
+        margin-bottom: 12.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .header {
+        padding-top: 4rem;
+        padding-bottom: 8.8rem;
+    }
+
+    .header:before {
+        background-image: url("../img/football_1280.jpg");
+    }
+
+    .header-logo {
+        margin-bottom: 16.5rem;
+    }
+
+}
+
+@media (min-width: 961px) {
+    .header {
+        padding-top: 4.5rem;
+        padding-bottom: 10.5rem;
+    }
+
+    .header:before {
+        background-image: url("../img/football_1920.jpg");
+    }
+
+    .header-logo {
+        margin-bottom: 27.8rem;
+    }
+
+}
+
+.header-buttons, .footer-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .header-buttons, .footer-buttons {
+        flex-wrap: wrap;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .header-container{
+        text-align: center;
+    }
+}
+/* content */
+
+.content {
+    position: relative;
+}
+
+.section-container {
+    box-sizing: border-box;
+}
+@media (min-width: 961px){
+    .section-container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.section-main-title {
+    color: #e7e7e7;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-title {
+    position: relative;
+}
+
+.section-number {
+    position: absolute;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #000000;
+    left: 0;
+}
+
+.section-number:after {
+    content: "";
+    width: 100%;
+    background-color: #5e42b0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section-medium .section-number:after,
+.section-dark .section-number:after {
+    background-color: #ffffff;
+}
+
+.section-medium,
+.section-dark {
+    color: #ffffff;
+}
+
+.section-dark .section-number {
+    color: #9173e6;
+}
+
+.section-title .title {
+    margin-top: 0;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+@media (max-width: 767px) {
+    .section-main-title {
+        font-size: 5rem;
+    }
+
+    .content {
+        padding-top: 1.5rem;
+    }
+
+    .section-heading {
+        margin-bottom: -3rem;
+        overflow-x: hidden;
+    }
+
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: 0.05rem;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+        padding-left: 3rem;
+    }
+
+    .section-title .title{
+        margin-bottom: 2rem;
+
+    }
+
+    .section-number {
+        font-size: 1.4rem;
+        padding-bottom: .5rem;
+        margin-right: .9rem;
+        top: 0.6rem;
+    }
+
+    .section-number:after {
+        height: .4rem;
+        border-radius: .4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .section-main-title {
+        font-size: 8rem;
+    }
+
+    .section-heading {
+        padding-top: 7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section {
+        box-sizing: border-box;
+        padding-top: 3rem;
+        padding-bottom: 3.2rem;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .section-title {
+        font-size: 3.2rem;
+        padding-left: 3rem;
+    }
+    .section-title .title{
+        margin-bottom: 2rem;
+
+    }
+    .section-number{
+        top: 0.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-number {
+        font-size: 1.8rem;
+        padding-bottom: .6rem;
+    }
+
+    .section-number:after {
+        height: .5rem;
+        border-radius: .5rem;
+    }
+
+    .section-title {
+        padding-left: 3rem;
+    }
+
+    .section-title .caption {
+        letter-spacing: 0.06em;
+    }
+}
+
+@media (min-width: 961px) {
+    .content {
+        overflow: hidden;
+    }
+
+    .section-heading {
+        padding-top: 10rem;
+    }
+
+    .section-main-title {
+        font-size: 8.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .section {
+        padding-top: 5.1rem;
+        padding-bottom: 5.5rem;
+        font-size: 2rem;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .section-title{
+        font-size: 3.6rem;
+    }
+    .section-title .title{
+        margin-bottom: 1.45rem;
+    }
+    .section-number{
+        top: 1rem;
+    }
+}
+
+.section-light {
+    background-color: #f5f4f9;
+}
+
+.section-medium {
+    background-color: #5e42b0;
+}
+
+.section-dark {
+    background-color: #0a0e34;
+}
+
+/* athlete */
+
+.athletes-heading-container:before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    .athletes-heading-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .athletes-heading-container .section-main-title {
+        order: -1;
+    }
+
+    .athletes-heading-container:before {
+        width: 192px;
+        height: 281px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../img/footballer_192.png);
+        margin-bottom: 0.5rem;
+        margin-top: 0.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .athletes-heading-container:before {
+        width: 497px;
+        height: 700px;
+        background-image: url(../img/footballer_497.png);
+        right: 57%;
+        top: 2rem;
+    }
+
+    .athletes .section .container,
+    .athletes .section-heading .container {
+        padding-left: 38%;
+    }
+}
+
+@media (min-width: 768px) {
+    .athletes-heading-container:before {
+        position: absolute;
+    }
+}
+
+@media (min-width: 961px) {
+    .athletes-heading-container {
+        position: relative;
+    }
+
+    .athletes-heading-container:before {
+        width: 566px;
+        height: 908px;
+        background-image: url(../img/footballer_566.png);
+        top: -7rem;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1599px) {
+    .athletes-heading-container:before {
+        right: 50%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .athletes-heading-container:before {
+        right: 78rem;
+    }
+
+}
+
+@media (min-width: 961px) and (max-width: 1599px) {
+    .athletes .section-container {
+        padding-left: 51%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .athletes .section-container {
+        padding-left: 81rem;
+    }
+
+}
+
+/* player */
+
+.players-heading-container:before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    .players-heading-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .players-heading-container .section-main-title {
+        order: -1;
+    }
+
+    .players-heading-container:before {
+        width: 302px;
+        height: 248px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../img/basketballer_302.png);
+        margin-bottom: 4.4rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .players-heading-container:before {
+        width: 436px;
+        height: 699px;
+        background-image: url(../img/basketballer_436.png);
+        right: 0;
+        top: 4rem;
+    }
+
+    .players .section .container,
+    .players .section-heading .container {
+        padding-right: 38%;
+    }
+}
+
+@media (min-width: 768px) {
+    .players-heading-container:before {
+        position: absolute;
+    }
+}
+
+@media (min-width: 961px) {
+    .players-heading-container {
+        position: relative;
+    }
+
+    .players-heading-container:before {
+        width: 991px;
+        height: 815px;
+        background-image: url(../img/basketballer_991.png);
+        top: -7.5rem;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1599px) {
+    .players-heading-container:before {
+        left: 45%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .players-heading-container:before {
+        left: 62.5rem;
+    }
+
+}
+
+@media (min-width: 961px) and (max-width: 1599px) {
+    .players .section-container {
+        padding-left: 10%;
+        padding-right: 51%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .players .section-container {
+        padding-left: 13rem;
+        padding-right: 81rem;
+    }
+
+}
+
+/* step */
+
+.step-number {
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #5e42b0;
+}
+
+.step-number .number {
+    display: inline-block;
+    position: relative;
+     font-weight: bold;
+}
+
+.step-number .number:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: #9173e6;
+    bottom: 0;
+    left: 0;
+}
+
+.step-picture {
+    max-width: 100%;
+}
+
+.step-picture .picture-src {
+    max-width: 100%;
+    display: block;
+}
+
+.step-title {
+    text-transform: uppercase;
+    color: #e7e7e7;
+    line-height: 1.2;
+}
+
+.step-title .title {
+    margin-top: 0;
+}
+
+.step-content {
+    line-height: 1.25;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .step-title {
+        font-size: 2.8rem;
+    }
+
+    .step-title .title {
+        margin-bottom: 2.2rem;
+    }
+
+    .step-content {
+        font-size: 1.6rem;
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-height: 21.2rem;
+    }
+
+    .step-number {
+        width: 7rem;
+        height: 7rem;
+
+    }
+
+    .step-number .number {
+        font-size: 1.4rem;
+        line-height: 2.2;
+    }
+
+    .step-number .number:after {
+        height: 0.4rem;
+        border-radius: 0.4rem;
+    }
+
+    .step-number {
+        top: 0;
+        margin-top: -9rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .step-title .title {
+        margin-bottom: 2rem;
+    }
+
+    .step-number {
+        font-size: 2.4rem;
+        line-height: 2.2;
+        letter-spacing: 0.05rem;
+    }
+
+    .step-number .number:after {
+        height: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .step-content {
+        position: relative;
+    }
+}
+
+@media (max-width: 960px) {
+    .step-title {
+        position: relative;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .step-title {
+        font-size: 8rem;
+    }
+
+    .step-content {
+        padding-top: 7.8rem;
+        padding-bottom: 9.8rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        line-height: 1.2;
+        font-size: 2.4rem;
+    }
+
+    .step-number {
+        width: 11.6rem;
+        height: 11.6rem;
+    }
+
+    .step-number {
+        top: 0;
+        margin-top: -16rem;
+    }
+}
+
+@media (min-width: 961px) {
+.step-number {
+        width: 16.8rem;
+        height: 15.5rem;
+    }
+
+.step {
+        display: flex;
+    }
+
+.step-picture {
+        width: 50%;
+    }
+
+.step-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10rem;    /*изменила с 12.8*/
+        padding-right: 12rem; /*изменила с 10*/
+    }
+
+.step-number {
+        left: -7.5rem;
+        margin-top: -2.5rem;
+    }
+
+.step-number .number {
+        margin-top: -2.2rem;
+    }
+
+.steps {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.step:nth-child(2n) .step-content{
+        padding-left: 10rem;         /*исправила с 19рем*/
+        padding-right: 12rem;      /*добавила */
+    }
+.step:nth-child(2n) .step-picture {
+        order: 1;
+    }
+
+.step:nth-child(2n) .step-number {
+        left: auto;
+        right: -8rem;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+    .step-title {
+        font-size: 4rem /*3.125vw;*/ 
+    }
+
+    .step-title .title {
+        margin-bottom: 5rem /*5.21vw;*/ 
+    }
+
+    .step-content {
+        font-size: calc 1.6rem /*(0.833vw + 0.8rem);*/ 
+    }
+}
+
+@media (min-width: 1920px) {
+    .step-title {
+        font-size: 7rem;
+    }
+
+    .step-title .title {
+        margin-bottom: 10rem;
+    }
+
+    .step-content {
+        font-size: 2.4rem;
+    }
+}
+
+/* footer */
+
+.footer {
+    background-color: #0a0e34;
+    position: relative;
+    color: #ffffff;
+    z-index: -1;
+}
+
+.footer:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.footer-container {
+    position: relative;
+}
+
+.download-logo {
+    background: linear-gradient(to right, #50329c, #7751db);
+    display: flex;
+}
+
+.download-logo .icon {
+    margin: auto;
+}
+
+.footer-slogan {
+    text-transform: uppercase;
+}
+
+.footer-slogan .action-order {
+    font-weight: bold;
+    display: block;
+    letter-spacing: 0.04em;
+}
+
+.footer-slogan .tip {
+    color: #9b8ec1;
+}
+
+@media (max-width: 767px) {
+.footer {
+        padding-top: 9.7rem;
+        padding-bottom: .6rem;
+    }
+
+.footer:before{
+        background-image: url("../img/game_767.jpg");
+    }
+
+.download-logo {
+        width: 7.4rem;
+        height: 7.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7.4rem;
+        border-radius: 2rem;
+    }
+
+.download-logo .icon {
+        height: 4.6rem;
+    }
+
+.download-app {
+        margin-bottom: 7.3rem;
+    }
+
+.footer-slogan .action-order {
+        font-size: 3.2rem;
+    }
+
+.footer-slogan .tip {
+        font-size: 1.4rem;
+    }
+
+.footer-buttons {
+        margin-bottom: 8.4rem;
+    }
+}     
+
+
+@media (max-width: 960px) {
+    .footer-slogan {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+.footer {
+        padding-top: 12.2rem;
+        padding-bottom: 2rem;
+    }
+
+.footer:before{
+        background-image: url("../img/game_1280.jpg");
+    }
+
+.download-logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7.3rem;
+    }
+
+.download-app {
+        margin-bottom: 27.8rem;
+    }
+
+.download-logo .icon {
+        height: 8.4rem;
+    }
+
+.footer-slogan .hint {
+        font-size: 3.6rem;
+    }
+
+.footer-buttons {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-slogan .action-order {
+        font-size: 8rem;
+    }
+
+    .download-logo {
+        width: 13rem;
+        height: 13.7rem;
+        border-radius: 2rem;
+    }
+
+    .download-logo .icon {
+        height: 8.4rem;
+    }
+}
+
+@media (min-width: 961px) {
+.footer {
+        padding-top: 22rem;
+        padding-bottom: 4.6rem;
+    }
+
+.footer:before{
+        background-image: url("../img/game_1920.jpg");
+    }
+
+.download-app {
+        display: flex;
+        justify-content: center;
+    }
+
+.download-logo{
+        margin-right: 3rem;
+    }
+
+ .download-app{
+        margin-bottom: 15.3rem;
+    }
+
+.footer-slogan .action-order {
+        line-height: 1.1;
+        margin-top: .6rem;
+    }
+
+.footer-slogan .tip {
+        font-size: 3rem;
+    }
+
+.footer-buttons {
+        margin-bottom: 24.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .form-container {
+   border: 1px solid #f2e3d2;
+   background: #c9b7a2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f2e3d2), to(#c9b7a2));
+   background: -webkit-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -moz-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -ms-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -o-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background-image: -ms-linear-gradient(top, #f2e3d2 0%, #c9b7a2 100%);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+   }
+.form-field {
+   border: 1px solid #c9b7a2;
+   background: #e4d5c3;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   color: #c9b7a2;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   }
+.form-field:focus {
+   background: #fff;
+   color: #725129;
+   }
+.form-container h2 {
+   text-shadow: #fdf2e4 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+    }
+.form-title {
+   margin-bottom:10px;
+   color: #725129;
+   text-shadow: #fdf2e4 0 1px 0;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:right;
+   }
+.submit-button {
+   border: 1px solid #447314;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #addc7e 0 1px 0;
+   color: #31540c;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.submit-button:hover {
+   border: 1px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+   }
+.submit-button:active {
+   text-shadow: #31540c 0 1px 0;
+   border: 1px solid #447314;
+   background: #8dc059;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
+   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+   background: -moz-linear-gradient(top, #6aa436, #8dc059);
+   background: -ms-linear-gradient(top, #6aa436, #8dc059);
+   background: -o-linear-gradient(top, #6aa436, #8dc059);
+   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+   color: #fff;
+   } */
