@@ -1,0 +1,2 @@
+# diplomadaptiv
+Adaptiv diplom
